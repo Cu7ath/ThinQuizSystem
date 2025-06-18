@@ -49,7 +49,7 @@
                 <td><%= rs.getTimestamp("created_at") %></td>
                 <td><%= rs.getInt("total_questions") %></td>
                 <td>
-                    <a class="btn" href="viewSubmissions.jsp?quiz_id=<%= rs.getInt("id") %>" style="background-color: buttonhighlight">View Submissions</a>
+                    <a class="btn" href="viewSubmissions.jsp?quiz_id=<%= rs.getInt("id") %>" style="background-color: pink">View Submissions</a>
                     <a class="btn" href="deleteQuiz.jsp?quiz_id=<%= rs.getInt("id") %>" style="background-color:red;">Delete</a>
                 </td>
             </tr>

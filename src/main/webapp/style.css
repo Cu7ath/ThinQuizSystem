@@ -1,0 +1,164 @@
+/* === THEME VARIABLES === */
+:root {
+    --primary-color: #a78bfa;
+    --secondary-color: #d8b4fe;
+    --background-color: #f3e8ff;
+    --text-color: #333;
+    --white: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* === CONTAINER === */
+.container, .form-container, .register-container, .login-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow);
+    padding: 30px;
+}
+
+/* === HEADINGS === */
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* === BUTTONS === */
+button, input[type="submit"], .btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+button:hover, input[type="submit"]:hover, .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-group {
+    margin-top: 30px;
+    gap: 100px;
+}
+
+/* === FORMS === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* === TABLES === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/*list navigation*/
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul.nav li a {
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+ul.nav li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* === NAVBAR === */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* === MESSAGES / ALERTS === */
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.alert.success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.alert.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}

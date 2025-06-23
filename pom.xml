@@ -7,6 +7,13 @@
     <artifactId>converted-project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+
+         <repositories>
+  <repository>
+    <id>central</id>
+    <url>https://repo.maven.apache.org/maven2</url>
+  </repository>
+</repositories>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -22,7 +29,7 @@
         <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
-    <version>8.0.28</version>
+    <version>8.0.30</version>
 </dependency>
     </dependencies>
     <build>
